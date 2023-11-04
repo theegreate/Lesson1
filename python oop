@@ -1,0 +1,36 @@
+#ONKUNDI EUNICE NYABOKE
+#SCT211-0544/2022
+
+class Calculator:
+    def __init__(self):
+        pass
+    
+    def calculate_sum(self, x, y):
+        return x + y
+    
+    def calculate_difference(self, x, y):
+        return x - y
+    
+    def calculate_product(self, x, y):
+        return x * y
+    
+    def calculate_quotient(self, x, y):
+        if y == 0:
+            return "Division by zero is not allowed."
+        return x / y
+
+if __name__ == "__main__":
+    number1 = float(input("Enter the first number: "))
+    number2 = float(input("Enter the second number: "))
+    
+    calc = Calculator()
+    
+    result_sum = calc.calculate_sum(number1, number2)
+    result_difference = calc.calculate_difference(number1, number2)
+    result_product = calc.calculate_quotient(number1,number2)
+    result_quotient = calc.calculate_quotient(number1,number2)
+    
+    print("sum: ",result_sum)
+    print("difference: ",result_difference)
+    print("product: ",result_product)
+    print("quotient: ",result_quotient)
